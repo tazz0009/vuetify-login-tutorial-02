@@ -28,10 +28,10 @@ npm install
 ### icon setup add link index.html
 
 ```
-    <link
-      href="https://fonts.googleapis.com/css?family=Material+Icons"
-      rel="stylesheet"
-    />
+<link
+  href="https://fonts.googleapis.com/css?family=Material+Icons"
+  rel="stylesheet"
+/>
 ```
 
 ### Compiles and hot-reloads for development
@@ -53,5 +53,57 @@ npm run lint --fix
 ```
 
 ### Customize configuration
+
+# vs code 단축키
+
+## application
+
+- Ctrl + Shift + p : command palette
+
+- Ctrl + p : Quick Open
+
+- Ctrl + , : User setting
+
+- Ctrl + B : Toggle Sidebar
+
+- Ctrl + ` : Toggle Terminal
+
+- Ctrl + k + s : KeyBoard Shortcut
+
+kite 설치
+
+## editor
+
+- Ctrl + Home/Ctrl + End : beginnig/end of file
+
+- Ctrl + Enter :
+
+- Ctrl + D : Multi Selection
+
+- Ctrl + U : Undo last Cursor
+
+- Alt + Click / Shift + Alt + Drag / Shift + Alt + i:
+
+# Plug in
+
+- Material Theme
+
+- Material Icon Theme
+
+- Prettier : setting save > Format on Save, Tab width : 2, Quote > Single
+
+- Bracket Pair Colorizer
+
+- Indent Rainbow
+
+- Auto Rename Tag
+
+- CSS Peek
+
+- HTML CSS Support
+
+- Live Server
+
+Markdown Preview
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
