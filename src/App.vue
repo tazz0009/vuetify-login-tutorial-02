@@ -1,6 +1,7 @@
 <template>
   <v-app id="inspire">
     <NavDra />
+    <AppBar />
 
     <v-main>
       <router-view />
@@ -10,10 +11,12 @@
 
 <script>
 import NavDra from "./components/NavDra";
+import AppBar from "./components/AppBar";
 
 export default {
   components: {
     NavDra,
-  },
+    AppBar
+  }
 };
 </script>

@@ -40,10 +40,10 @@ import { mapGetters, mapActions } from "vuex";
 export default {
   data: () => ({
     email: "",
-    password: "",
+    password: ""
   }),
   methods: {
-    ...mapActions("login", ["login"]),
+    ...mapActions("login", ["login"])
     // test() {
     //   axios
     //     .get("https://reqres.in/api/users?page=2")
@@ -75,8 +75,8 @@ export default {
     // },
   },
   computed: {
-    ...mapGetters("login", ["isLoginError"]),
-  },
+    ...mapGetters("login", ["isLoginError"])
+  }
 };
 </script>
 <style scoped>

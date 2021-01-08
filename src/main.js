@@ -13,5 +13,5 @@ new Vue({
     this.$store.dispatch("login/getMemberInfo");
   },
   vuetify,
-  render: (h) => h(App),
+  render: (h) => h(App)
 }).$mount("#app");

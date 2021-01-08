@@ -7,18 +7,18 @@ const state = () => ({
       id: 1,
       name: "test01",
       email: "test01@test.com",
-      password: "1234qwer",
+      password: "1234qwer"
     },
     {
       id: 2,
       name: "test02",
       email: "test02@test.com",
-      password: "1234qwer",
-    },
+      password: "1234qwer"
+    }
   ],
   userInfo: null,
   isLogin: false,
-  isLoginError: false,
+  isLoginError: false
 });
 
 // getters
@@ -31,7 +31,7 @@ const getters = {
   },
   getUserInfo(state) {
     return state.userInfo;
-  },
+  }
 };
 
 // actions
@@ -69,8 +69,8 @@ const actions = {
     if (token !== "") {
       let config = {
         headers: {
-          access_tocken: token,
-        },
+          access_tocken: token
+        }
       };
       axios
         .get("https://reqres.in/api/users/2", config)
@@ -79,7 +79,7 @@ const actions = {
             id: response.data.data.id,
             first_name: response.data.data.first_name,
             last_name: response.data.data.last_name,
-            avatar: response.data.data.avatar,
+            avatar: response.data.data.avatar
           };
           commit("loginSuccess", userInfo);
         })
@@ -87,7 +87,7 @@ const actions = {
           console.log(error);
         });
     }
-  },
+  }
 };
 
 // mutations
@@ -109,7 +109,7 @@ const mutations = {
     state.isLoginError = null;
     state.userInfo = null;
     localStorage.setItem("access_token", "");
-  },
+  }
 };
 
 export default {
@@ -117,5 +117,5 @@ export default {
   state,
   getters,
   actions,
-  mutations,
+  mutations
 };
