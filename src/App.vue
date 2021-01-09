@@ -17,6 +17,9 @@ export default {
   components: {
     NavDra,
     AppBar
+  },
+  created: () => {
+    console.log(process.env);
   }
 };
 </script>
